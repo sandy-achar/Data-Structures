@@ -13,7 +13,7 @@ public:
 		tail = 0; //So this shows the next empty position
 	}
 
-	void insert() {
+	void enqueue() {
 
 		if (tail == size) {
 			cout<<"\nThe queue is full. Consider adding some elements.";
@@ -25,7 +25,7 @@ public:
 		}
 	}
 
-	void delete_data() {
+	void dequeue() {
 
 		if (tail == 0) {
 			cout<<"\nThe queue is empty. There is nothing to delete.";
@@ -61,14 +61,14 @@ int main() {
 
 	while(again) {
 		int c;
-		cout<<"\nOptions:\n1. Insert\n2. Delete\n3. Display\n4. Exit\n";
+		cout<<"\nOptions:\n1. Enqueue\n2. Dequeue\n3. Display\n4. Exit\n";
 		cin>>c;
 
 		switch(c) {
-			case 1:	q.insert();
+			case 1:	q.enqueue();
 					break;
 
-			case 2: q.delete_data();
+			case 2: q.dequeue();
 					break;
 
 			case 3: q.display();

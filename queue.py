@@ -5,12 +5,12 @@ class queue:
         """Initialize stuff for the queue"""
         self.data = []
 
-    def insert(self):
+    def enqueue(self):
         """Insert data into the stack"""
         data = int(input("\nEnter the data: "))
         self.data.append(data)
 
-    def delete(self):
+    def dequeue(self):
         """Delete data from the stack"""
         if len(self.data) == 0:
             print("\nThere is nothing in the stack.")
@@ -38,12 +38,12 @@ q = queue()
 again = True
 
 while(again):
-    a = int(input("\nOptions \n1. Insert\n2. Delete\n3. Display\n4. Exit\n  "))
+    a = int(input("\nOptions \n1. Enqueue\n2. Dequeue\n3. Display\n4. Exit\n  "))
 
     if a == 1:
-        q.insert()
+        q.enqueue()
     elif a == 2:
-        q.delete()
+        q.dequeue()
     elif a == 3:
         q.display()
     elif a == 4:
