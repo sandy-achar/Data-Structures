@@ -109,7 +109,7 @@ q = queue()
 again = True
 
 while(again):
-    a = int(input("\nOptions \n1. Push\n2. Pop\n3. Display\n4. Exit\n  "))
+    a = int(input("\nOptions \n1. Insert\n2. Delete\n3. Display\n4. Exit\n  "))
 
     if a == 1:
         key = int(input("Key: "))
