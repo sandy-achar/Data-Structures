@@ -1,0 +1,16 @@
+{
+	"overview" : [
+	{
+		"title": "About",
+		"content": "Stuff about Informs."
+	},
+	{
+		"title": "Goals",
+		"content": "Goals of Informs."
+	},
+	{
+		"title": "Some title",
+		"content": "Some stuff about Informs."
+	}
+	]
+}
